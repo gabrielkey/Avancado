@@ -19,21 +19,21 @@ const logger = createLogger({
 
 function isPrime(number) {
   const startTime = Date.now();
-  logger.debug('Verificando se %d é primo', number);
+  logger.debug('Verificando se %j é primo', number);
 
   if (number <= 1) {
-    logger.info('O número %d não é primo porque é menor ou igual a 1', number);
+    logger.info('O número %j não é primo porque é menor ou igual a 1', number);
     return false;
   }
 
   for (let i = 2; i <= Math.sqrt(number); i++) {
     if (number % i === 0) {
-      logger.info('O número %d não é primo porque é divisível por %d', number, i);
+      logger.info('O número %j não é primo porque é divisível por %d', number, i);
       return false;
     }
   }
   const endTime = Date.now();
-  logger.info('Tempo de execução para isPrime(%d): %d ms', number, endTime - startTime);
+  logger.info('Tempo de execução para isPrime(%j): %d ms', number, endTime - startTime);
   return true;
 }
 
