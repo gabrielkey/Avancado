@@ -1,0 +1,42 @@
+###
+
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/api/produtos
+
+###
+
+GET http://localhost:8080/api/produtos/1
+
+###
+
+
+POST http://localhost:8080/api/produtos
+Content-Type: application/json
+
+{
+    "nome": "Huawei Phonw",
+    "descricao": "Um celular da guawei poderoso para você jogar jogos!",
+    "preco": 1087.00,
+    "tags": ["tag1"]
+}
+
+
+###
+
+PUT http://localhost:8080/api/produtos/3
+Content-Type: application/json
+
+{
+    "nome": "Celulares de Performance",
+    "descricao": "QUalquer coiasas",
+    "preco": 350.00
+}
+
+###
+
+DELETE http://localhost:8080/api/produtos/5
+
+
