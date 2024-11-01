@@ -1,0 +1,18 @@
+2024-11-01T11:50:19.305Z [debug]: Verificando se 2 é primo
+2024-11-01T11:50:19.323Z [info]: Tempo de execução para isPrime(2): 19 ms
+2024-11-01T11:50:19.328Z [debug]: Verificando se 3 é primo
+2024-11-01T11:50:19.329Z [info]: Tempo de execução para isPrime(3): 1 ms
+2024-11-01T11:50:19.329Z [debug]: Verificando se 4 é primo
+2024-11-01T11:50:19.330Z [info]: O número 4 não é primo porque é divisível por 2
+2024-11-01T11:50:19.331Z [debug]: Verificando se 5 é primo
+2024-11-01T11:50:19.359Z [info]: Tempo de execução para isPrime(5): 28 ms
+2024-11-01T11:50:19.365Z [debug]: Verificando se 6 é primo
+2024-11-01T11:50:19.368Z [info]: O número 6 não é primo porque é divisível por 2
+2024-11-01T11:50:19.369Z [debug]: Verificando se 7 é primo
+2024-11-01T11:50:19.371Z [info]: Tempo de execução para isPrime(7): 2 ms
+2024-11-01T11:50:19.379Z [debug]: Verificando se 8 é primo
+2024-11-01T11:50:19.387Z [info]: O número 8 não é primo porque é divisível por 2
+2024-11-01T11:50:19.397Z [debug]: Verificando se 9 é primo
+2024-11-01T11:50:19.399Z [info]: O número 9 não é primo porque é divisível por 3
+2024-11-01T11:50:19.401Z [debug]: Verificando se 10 é primo
+2024-11-01T11:50:19.401Z [info]: O número 10 não é primo porque é divisível por 2
