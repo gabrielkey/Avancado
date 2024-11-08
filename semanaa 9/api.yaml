@@ -1,0 +1,67 @@
+openapi: '3.0.2'
+info:
+  title: API!
+  version: '1.0'
+  description: API para gerenciar usuários simples.
+  contact:
+    name: Desenvolvedor
+servers:
+  - url: http://localhost:3000
+    description: Servidor local para desenvolvimento
+paths:
+  /users:
+    get:
+      summary: Retorna todos os usuários
+      responses:
+        '200':
+          description: Lista de usuários
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  users:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/User"
+    post:
+      summary: Adiciona um novo usuário
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/User"
+      responses:
+        '200':
+          description: Usuário adicionado com sucesso!!!
+        '400':
+          description: Erro de validação de dados
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: joão
+        email:
+          type: string
+          format: email
+          example: joão@exemplo.com
+        password:
+          type: string
+          example: jo123
+    Error:
+      type: object
+      properties:
+        msg:
+          type: string
+          example: Os dados inseridos são invalidos
